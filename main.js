@@ -1,5 +1,3 @@
-const version = 'Beta 2.1';
-
 var input2 = document.getElementById('input2');
 var input1 = document.getElementById('input1');
 
@@ -54,19 +52,7 @@ botao.addEventListener('click', function (e) {
     if (dia > 364) {
         anos = Math.floor(dia / 365);
         meses = meses % 12;
-        resultado =
-            anos +
-            ' anos, ' +
-            meses +
-            ' meses, ' +
-            dias +
-            ' dias, ' +
-            horas +
-            ' horas, ' +
-            minutos +
-            ' minutos, ' +
-            segundos +
-            ' segundos';
+        resultado = anos + ' anos, ' + meses + ' meses, ' + dias + ' dias, ' + horas + ' horas, ' + minutos + ' minutos, ' + segundos + ' segundos';
     }
 
     document.querySelector('#resultado').innerHTML = resultado;
