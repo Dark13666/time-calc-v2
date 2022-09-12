@@ -1,0 +1,114 @@
+body {
+    background-color: black;
+    color: #ffffff;
+    color-scheme: dark;
+    background-image: url('matrix.jpg');
+}
+
+.titulo1 {
+    font-family: 'Quantico', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.br-titulo {
+    height: 0;
+    width: 0;
+    display: contents;
+}
+.titulo2 {
+    color: rgb(23, 222, 23);
+    font-family: 'Quantico', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 48px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.version-bottom {
+    font-family: monospace;
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    font-size: 11px;
+}
+
+.inputs-div {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 350px 2fr 350px 1fr;
+}
+.input1,
+.input2 {
+    font-family: Helvetica;
+    height: 60px;
+    font-size: 20px;
+    text-align: middle;
+    text-align: center;
+    padding: 0;
+    border-radius: 50px;
+    color: white;
+    user-select: contain;
+    color-scheme: dark;
+    appearance: none;
+    box-sizing: border-box;
+    border: 2px solid white;
+    background: transparent;
+}
+.botao-div {
+    margin-top: 50px;
+    text-align: center;
+}
+.botao-converter {
+    font-family: Helvetica;
+    height: 60px;
+    width: 350px;
+    font-size: 20px;
+    text-align: middle;
+    text-align: center;
+    padding: 0;
+    border-radius: 50px;
+    color: white;
+    color-scheme: dark;
+    appearance: none;
+    box-sizing: border-box;
+    border: 2px solid white;
+    background: transparent;
+    font-weight: 750;
+    transition: background-color 0.11s, color 0.11s;
+}
+
+.botao-converter:hover {
+    background-color: white;
+    color: black;
+}
+.botao-converter:active {
+    background-color: #acacac;
+    color: black;
+}
+
+.input1::-webkit-datetime-edit-text,
+.input2::-webkit-datetime-edit-text {
+    padding: 0 7px;
+}
+.input1::-webkit-datetime-edit-month-field,
+.input2::-webkit-datetime-edit-month-field {
+    text-transform: uppercase;
+}
+.input1::-webkit-datetime-edit-day-field,
+.input2::-webkit-datetime-edit-day-field {
+    text-transform: uppercase;
+}
+.input1::-webkit-datetime-edit-year-field,
+.input2::-webkit-datetime-edit-year-field {
+    text-transform: uppercase;
+}
+
+.resultado-completo {
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 36px;
+}
